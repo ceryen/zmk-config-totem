@@ -23,7 +23,7 @@
 #define MAC   1
 #define NUM   2
 #define SYM   3
-#define MOVE  4
+#define MOV   4 
 #define MOUSE 5
 #define FUN   6
 #define CONN  7
@@ -60,7 +60,7 @@ label= "WIN"                               ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃    MAC    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃     ,     ┃     .     ┃     /     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃   LCTRL   ┃  TAB/NUM  ┃ BSPC/SYM  ┃   ┃    SPC    ┃ RET/MOVE  ┃  ESC/FUN  ┃
+//                                     ┃   LCTRL   ┃  TAB/NUM  ┃ BSPC/SYM  ┃   ┃    SPC    ┃  RET/MOV  ┃  ESC/FUN  ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -68,7 +68,7 @@ label= "WIN"                               ;
                 &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
                 &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D           &kp H       &mt RSHFT N &mt RCTRL E &mt RALT I  &mt RGUI O
     &to MAC     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &none
-                                        &kp LCTRL   &lt NUM TAB &lt SYM BSPC    &kp SPACE  &lt MOVE RET &lt FUN ESC
+                                        &kp LCTRL   &lt NUM TAB &lt SYM BSPC    &kp SPACE   &lt MOV RET &lt FUN ESC
                         >;
                 };
 
@@ -85,7 +85,7 @@ label= "MAC"                               ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃    WIN    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃     ,     ┃     .     ┃     /     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃   LGUI    ┃  TAB/NUM  ┃ BSPC/SYM  ┃   ┃    SPC    ┃ RET/MOVE  ┃  ESC/FUN  ┃
+//                                     ┃   LGUI    ┃  TAB/NUM  ┃ BSPC/SYM  ┃   ┃    SPC    ┃  RET/MOV  ┃  ESC/FUN  ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -93,7 +93,7 @@ label= "MAC"                               ;
                 &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
                 &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D           &kp H       &mt RSHFT N &mt RCTRL E &mt RALT I  &mt RGUI O
      &to WIN    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &none
-                                        &kp LGUI    &lt NUM TAB &lt SYM BSPC    &kp SPACE  &lt MOVE RET &lt FUN ESC
+                                        &kp LGUI    &lt NUM TAB &lt SYM BSPC    &kp SPACE   &lt MOV RET &lt FUN ESC
                         >;
                 };
 
@@ -154,7 +154,7 @@ label= "SYM"                               ;
 
                 move_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "MOVE"                              ;
+label= "MOV"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃   P UP    ┃   HOME    ┃     UP    ┃    END    ┃           ┃
