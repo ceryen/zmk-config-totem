@@ -76,7 +76,8 @@
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_tap &kp LEFT>
-                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp LEFT>
+                , <&macro_release &kp LGUI>
                 ;
         };
 
@@ -86,7 +87,8 @@
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_tap &kp RIGHT>
-                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp RIGHT>
+                , <&macro_release &kp LGUI>
                 ;
         };
 
@@ -96,7 +98,8 @@
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_tap &kp UP>
-                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp UP>
+                , <&macro_release &kp LGUI>
                 ;
         };
     };
