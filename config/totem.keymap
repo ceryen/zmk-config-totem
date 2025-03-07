@@ -63,7 +63,7 @@
         winswapback: winswapback {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
-            bindings = <&kt LA(LS)>, <&kp TAB>, <&kt LA(LS)>;
+            bindings = <&kt LA(LSHFT)>, <&kp TAB>, <&kt LA(LSHFT)>;
         };
     };
 
