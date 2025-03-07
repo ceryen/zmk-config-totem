@@ -339,21 +339,21 @@ label= "WM_MOD_MAC"                        ;
 label= "FUN"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃ BT NEXT   ┃           ┃ VOL UP    ┃ BRI UP    ┃ ALT+PSCRN ┃   ┃    F12    ┃    F7     ┃    F8     ┃    F9     ┃           ┃
+//             ┃ BT_SEL 0  ┃ BT_SEL 1  ┃ VOL UP    ┃ BRI UP    ┃ ALT+PSCRN ┃   ┃    F12    ┃    F7     ┃    F8     ┃    F9     ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃ BT PREV   ┃           ┃ VOL DOWN  ┃ BRI DOWN  ┃ PSCRN     ┃   ┃    F11    ┃    F4     ┃    F5     ┃    F6     ┃           ┃
+//             ┃ BT_SEL 2  ┃ BT_SEL 3  ┃ VOL DOWN  ┃ BRI DOWN  ┃ PSCRN     ┃   ┃    F11    ┃    F4     ┃    F5     ┃    F6     ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃   RESET   ┃ BT CLEAR  ┃           ┃ MUTE      ┃           ┃           ┃   ┃    F10    ┃    F1     ┃    F2     ┃    F3     ┃           ┃ BOOTLOAD  ┃
+// ┃   RESET   ┃ BT_CLR    ┃ OUT_TOG   ┃ MUTE      ┃           ┃           ┃   ┃    F10    ┃    F1     ┃    F2     ┃    F3     ┃           ┃ BOOTLOAD  ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-// ╷           ╷           ╷           ╷            ╷            ╷             ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+// ╷           ╷            ╷            ╷            ╷            ╷             ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &bt BT_NXT  &none       &kp C_VOL_UP &kp C_BRI_UP &kp LA(PSCRN)     &kp F12     &kp F7      &kp F8      &kp F9      &none
-                &bt BT_PRV  &none       &kp C_VOL_DN &kp C_BRI_DN &kp PSCRN         &kp F11     &kp F4      &kp F5      &kp F6      &none  
-    &sys_reset  &bt BT_CLR  &none       &kp C_MUTE   &none        &none             &kp F10     &kp F1      &kp F2      &kp F3      &none       &bootloader
-                                        &none        &none        &none             &none       &none       &none      
+                &bt BT_SEL 0 &bt BT_SEL 1 &kp C_VOL_UP &kp C_BRI_UP &kp LA(PSCRN)     &kp F12     &kp F7      &kp F8      &kp F9      &none
+                &bt BT_SEL 2 &bt BT_SEL 3 &kp C_VOL_DN &kp C_BRI_DN &kp PSCRN         &kp F11     &kp F4      &kp F5      &kp F6      &none  
+    &sys_reset  &bt BT_CLR   &out OUT_TOG &kp C_MUTE   &none        &none             &kp F10     &kp F1      &kp F2      &kp F3      &none       &bootloader
+                                          &none        &none        &none             &none       &none       &none      
                         >;
                 };
         };
