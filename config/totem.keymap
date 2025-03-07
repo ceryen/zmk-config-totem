@@ -58,14 +58,14 @@
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positions = <18>
+            ignored-key-positions = <18>;
         };
         
         macswap: macswap {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positions = <18>
+            ignored-key-positions = <18>;
         };
     };
 
