@@ -54,16 +54,18 @@
     };
 
     behaviors {
-        winswapfor: winswapfor {
+        winswap: winswap {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <18>
         };
         
-        winswapback: winswapback {
+        macswap: macswap {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
-            bindings = <&kt LA(LSHFT)>, <&kp TAB>, <&kt LA(LSHFT)>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <18>
         };
     };
 
@@ -207,7 +209,7 @@ label= "WM_WIN"                            ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃ EXIT TAB  ┃ NEW TAB   ┃ PREV TAB  ┃ NEXT TAB  ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ EXIT WIN  ┃ NEW WIN   ┃ PREV WIN  ┃ NEXT WIN  ┃           ┃
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ EXIT WIN  ┃ NEW WIN   ┃ SWAP WIN  ┃ SWAP WIN  ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃ DESK OVW  ┃ PREV DESK ┃ NEXT DESK ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -217,7 +219,7 @@ label= "WM_WIN"                            ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none       &none       &none   &none           &none    &kp LC(W)  &kp LC(T)   &kp LC(LS(TAB))  &kp LC(TAB)       &none
-                &none       &none       &none   &none           &none    &kp LA(F4) &kp LC(N)   &winswapback     &winswapfor       &none
+                &none       &none       &none   &none           &none    &kp LA(F4) &kp LC(N)   &winswap         &kp LS(TAB)       &none
     &none       &none       &none       &none   &none           &none    &none      &kp LG(TAB) &kp LG(LC(LEFT)) &kp LG(LC(RIGHT)) &none    &none
                                         &none   &mo WM_MOD_WIN  &none    &none      &none       &none
                         >;
@@ -259,7 +261,7 @@ label= "WM_MAC"                            ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃ EXIT TAB  ┃ NEW TAB   ┃ PREV TAB  ┃ NEXT TAB  ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ EXIT WIN  ┃ NEW WIN   ┃ PREV WIN  ┃ NEXT WIN  ┃           ┃
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ EXIT WIN  ┃ NEW WIN   ┃ SWAP WIN  ┃ SWAP WIN  ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃ DESK OVW  ┃ PREV DESK ┃ NEXT DESK ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -269,7 +271,7 @@ label= "WM_MAC"                            ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none       &none       &none   &none           &none      &kp RG(W)     &kp RG(T)  &kp RC(LS(TAB)) &kp RC(TAB)   &none
-                &none       &none       &none   &none           &none      &kp RG(LS(W)) &kp RG(N)  &kp RC(LS(F4))  &kp RC(F4)    &none
+                &none       &none       &none   &none           &none      &kp RG(LS(W)) &kp RG(N)  &macswap        &kp LSHFT     &none
     &none       &none       &none       &none   &none           &none      &none         &kp RC(UP) &kp RC(LEFT)    &kp RC(RIGHT) &none    &none
                                         &none   &mo WM_MOD_MAC  &none      &none         &none      &none
                         >;
