@@ -205,21 +205,21 @@ label= "MOV"                               ;
 label= "WM_WIN"                            ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ NEW TAB   ┃ PREV TAB  ┃ NEXT TAB  ┃ EXIT TAB  ┃           ┃
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ EXIT TAB  ┃ NEW TAB   ┃ PREV TAB  ┃ NEXT TAB  ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ NEW WIN   ┃ PREV WIN  ┃ NEXT WIN  ┃ EXIT WIN  ┃           ┃
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ EXIT WIN  ┃ NEW WIN   ┃ PREV WIN  ┃ NEXT WIN  ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃ DESK OVW  ┃ PREV DESK ┃ NEXT DESK ┃           ┃           ┃           ┃
+// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃ DESK OVW  ┃ PREV DESK ┃ NEXT DESK ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃ WM_MOD_WIN┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &none       &none   &none           &none    &kp LC(T)   &kp LC(LS(TAB))  &kp LC(TAB)       &kp LC(W)  &none
-                &none       &none       &none   &none           &none    &kp LC(N)   &winswapback     &winswapfor       &kp LA(F4) &none
-    &none       &none       &none       &none   &none           &none    &kp LG(TAB) &kp LG(LC(LEFT)) &kp LG(LC(RIGHT)) &none      &none    &none
-                                        &none   &mo WM_MOD_WIN  &none    &none       &none            &none
+                &none       &none       &none   &none           &none    &kp LC(W)  &kp LC(T)   &kp LC(LS(TAB))  &kp LC(TAB)       &none
+                &none       &none       &none   &none           &none    &kp LA(F4) &kp LC(N)   &winswapback     &winswapfor       &none
+    &none       &none       &none       &none   &none           &none    &none      &kp LG(TAB) &kp LG(LC(LEFT)) &kp LG(LC(RIGHT)) &none    &none
+                                        &none   &mo WM_MOD_WIN  &none    &none      &none       &none
                         >;
                 };
      
@@ -257,21 +257,21 @@ label= "WM_MOD_WIN"                        ;
 label= "WM_MAC"                            ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ NEW TAB   ┃ PREV TAB  ┃ NEXT TAB  ┃ EXIT TAB  ┃           ┃
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ EXIT TAB  ┃ NEW TAB   ┃ PREV TAB  ┃ NEXT TAB  ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ NEW WIN   ┃ PREV WIN  ┃ NEXT WIN  ┃ EXIT WIN  ┃           ┃
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ EXIT WIN  ┃ NEW WIN   ┃ PREV WIN  ┃ NEXT WIN  ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃ DESK OVW  ┃ PREV DESK ┃ NEXT DESK ┃           ┃           ┃           ┃
+// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃ DESK OVW  ┃ PREV DESK ┃ NEXT DESK ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃ WM_MOD_MAC┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &none       &none   &none           &none       &kp RG(T)   &kp RC(LS(TAB)) &kp RC(TAB)   &kp RG(W)     &none
-                &none       &none       &none   &none           &none       &kp RG(N)   &kp RC(LS(F4))  &kp RC(F4)    &kp RG(LS(W)) &none
-    &none       &none       &none       &none   &none           &none       &kp RC(UP)  &kp RC(LEFT)    &kp RC(RIGHT) &none         &none     &none
-                                        &none   &mo WM_MOD_MAC  &none       &none       &none           &none
+                &none       &none       &none   &none           &none      &kp RG(W)     &kp RG(T)  &kp RC(LS(TAB)) &kp RC(TAB)   &none
+                &none       &none       &none   &none           &none      &kp RG(LS(W)) &kp RG(N)  &kp RC(LS(F4))  &kp RC(F4)    &none
+    &none       &none       &none       &none   &none           &none      &none         &kp RC(UP) &kp RC(LEFT)    &kp RC(RIGHT) &none    &none
+                                        &none   &mo WM_MOD_MAC  &none      &none         &none      &none
                         >;
                 };
      
@@ -283,7 +283,7 @@ label= "WM_MAC"                            ;
 label= "WM_MOD_MAC"                        ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ NAME TAB  ┃ MV TAB LT ┃ MV TAB RT ┃           ┃           ┃
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃ NAME TAB  ┃ MV TAB LT ┃ MV TAB RT ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
@@ -294,10 +294,10 @@ label= "WM_MOD_MAC"                        ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &none       &none       &none       &none       &kp RG(R) &kp RC(RA(LS(TAB))) &kp RC(RA(TAB)) &none &none
-                &none       &none       &none       &none       &none       &none     &none               &none           &none &none
-    &none       &none       &none       &none       &none       &none       &none     &none               &none           &none &none       &none
-                                        &none       &none       &none       &none     &none               &none
+                &none       &none       &none       &none       &none       &none &kp RG(R) &kp RC(RA(LS(TAB))) &kp RC(RA(TAB)) &none
+                &none       &none       &none       &none       &none       &none &none     &none               &none           &none
+    &none       &none       &none       &none       &none       &none       &none &none     &none               &none           &none       &none
+                                        &none       &none       &none       &none &none     &none
                         >;
                 };
      
