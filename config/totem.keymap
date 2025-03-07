@@ -27,7 +27,6 @@
 #define MOV   4 
 #define MOUSE 5
 #define FUN   6
-#define CONN  7
 
 &lt {
   tapping-term-ms = <250>;
@@ -66,7 +65,7 @@ label= "WIN"                               ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃    MAC    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃     ,     ┃     .     ┃     /     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃   LCTRL   ┃  TAB/NUM  ┃ BSPC/SYM  ┃   ┃  SPC/MOV  ┃  RET/FUN  ┃    ESC    ┃
+//                                     ┃   LCTRL   ┃  TAB/NUM  ┃ BSPC/SYM  ┃   ┃  SPC/MOV  ┃    RET    ┃  ESC/FUN  ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -74,7 +73,7 @@ label= "WIN"                               ;
                 &kp Q       &kp W       &kp F       &kp P       &kp G         &kp J         &kp L       &kp U       &kp Y       &kp SEMI
                 &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D         &kp H         &mt RSHFT N &mt RCTRL E &mt RALT I  &mt RGUI O
     &to MAC     &kp Z       &kp X       &kp C       &kp V       &kp B         &kp K         &kp M       &kp COMMA   &kp DOT     &kp FSLH    &none
-                                        &kp LCTRL   &lt NUM TAB &lt SYM BSPC  &lt MOV SPACE &lt FUN RET &kp ESC
+                                        &kp LCTRL   &lt NUM TAB &lt SYM BSPC  &lt MOV SPACE &kp RET     &lt FUN ESC
                         >;
                 };
 
@@ -91,7 +90,7 @@ label= "MAC"                               ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃    WIN    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃     ,     ┃     .     ┃     /     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃   LGUI    ┃  TAB/NUM  ┃ BSPC/SYM  ┃   ┃  SPC/MOV  ┃  RET/FUN  ┃    ESC    ┃
+//                                     ┃   LGUI    ┃  TAB/NUM  ┃ BSPC/SYM  ┃   ┃  SPC/MOV  ┃    RET    ┃  ESC/FUN  ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -99,7 +98,7 @@ label= "MAC"                               ;
                 &kp Q       &kp W       &kp F       &kp P       &kp G         &kp J         &kp L       &kp U       &kp Y       &kp SEMI
                 &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LSHFT T &kp D         &kp H         &mt RSHFT N &mt RGUI E  &mt RALT I  &mt RCTRL O
      &to WIN    &kp Z       &kp X       &kp C       &kp V       &kp B         &kp K         &kp M       &kp COMMA   &kp DOT     &kp FSLH    &none
-                                        &kp LGUI    &lt NUM TAB &lt SYM BSPC  &lt MOV SPACE &lt FUN RET &kp ESC
+                                        &kp LGUI    &lt NUM TAB &lt SYM BSPC  &lt MOV SPACE &kp RET     &lt FUN ESC
                         >;
                 };
 
@@ -122,10 +121,10 @@ label= "NUM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &none       &kp F       &none       &none           &none        &kp N7     &kp N8      &kp N9      &none
+                &none       &none       &kp F       &none       &none           &none      &kp N7       &kp N8      &kp N9      &none
                 &kp A       &none       &kp E       &none       &kp D           &kp PLUS   &mt RSHFT N4 &kp N5      &kp N6      &kp ASTRK
-    &none       &none       &kp X       &kp C       &none       &kp B           &kp MINUS    &kp N1     &kp N2      &kp N3      &kp FSLH    &none 
-                                        &none       &none       &none           &kp EQUAL    &kp N0     &kp DOT
+    &none       &none       &kp X       &kp C       &none       &kp B           &kp MINUS  &kp N1       &kp N2      &kp N3      &kp FSLH    &none 
+                                        &none       &none       &none           &kp EQUAL  &kp N0       &kp DOT
                         >;
                 };
 
@@ -215,47 +214,21 @@ label= "MOUSE"                             ;
 label= "FUN"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃           ┃           ┃ VOL UP    ┃ BRI UP    ┃ ALT+PSCRN ┃   ┃    F12    ┃    F7     ┃    F8     ┃    F9     ┃           ┃
+//             ┃ BT NEXT   ┃           ┃ VOL UP    ┃ BRI UP    ┃ ALT+PSCRN ┃   ┃    F12    ┃    F7     ┃    F8     ┃    F9     ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃           ┃ VOL DOWN  ┃ BRI DOWN  ┃ PSCRN     ┃   ┃    F11    ┃    F4     ┃    F5     ┃    F6     ┃           ┃
+//             ┃ BT PREV   ┃           ┃ VOL DOWN  ┃ BRI DOWN  ┃ PSCRN     ┃   ┃    F11    ┃    F4     ┃    F5     ┃    F6     ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃           ┃           ┃ MUTE      ┃           ┃           ┃   ┃    F10    ┃    F1     ┃    F2     ┃    F3     ┃           ┃           ┃
-// ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃           ┃ CONN      ┃   ┃           ┃           ┃           ┃
-//                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
- bindings = <
-// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-
-                &none       &none     &kp C_VOL_UP &kp C_BRI_UP &kp LA(PSCRN)   &kp F12     &kp F7      &kp F8      &kp F9      &none
-                &none       &none     &kp C_VOL_DN &kp C_BRI_DN &kp PSCRN       &kp F11     &kp F4      &kp F5      &kp F6      &none  
-    &none       &none       &none     &kp C_MUTE   &none        &none           &kp F10     &kp F1      &kp F2      &kp F3      &none       &none         
-                                      &none        &none        &mo CONN        &none       &none       &none      
-                        >;
-                };
-
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-
-                conn_layer {
-// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "CONN"                              ;
-// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-//             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃           ┃           ┃ BT NEXT   ┃ OUT BLE   ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
-//             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃           ┃ BT PREV   ┃ OUT USB   ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
-// ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃   RESET   ┃           ┃           ┃ BT CLEAR  ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃ BOOTLOAD  ┃
+// ┃   RESET   ┃ BT CLEAR  ┃           ┃ MUTE      ┃           ┃           ┃   ┃    F10    ┃    F1     ┃    F2     ┃    F3     ┃           ┃ BOOTLOAD  ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &none      &bt BT_NXT  &out OUT_BLE &none           &none       &none       &none       &none       &none
-                &none       &none      &bt BT_PRV  &out OUT_USB &none           &none       &none       &none       &none       &none  
-    &sys_reset  &none       &none      &bt BT_CLR  &none        &none           &none       &none       &none       &none       &none       &bootloader         
-                                       &none       &none        &none           &none       &none       &none      
+                &bt BT_NXT  &none     &kp C_VOL_UP &kp C_BRI_UP &kp LA(PSCRN)   &kp F12     &kp F7      &kp F8      &kp F9      &none
+                &bt BT_PRV  &none     &kp C_VOL_DN &kp C_BRI_DN &kp PSCRN       &kp F11     &kp F4      &kp F5      &kp F6      &none  
+    &sys_reset  &bt BT_CLR  &none     &kp C_MUTE   &none        &none           &kp F10     &kp F1      &kp F2      &kp F3      &none       &bootloader
+                                      &none        &none        &none           &none       &none       &none      
                         >;
                 };
         };
