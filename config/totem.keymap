@@ -54,14 +54,7 @@
     };
 
     behaviors {
-        winswap: winswap {
-            compatible = "zmk,behavior-tri-state";
-            #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positions = <18>;
-        };
-  
-        macswap: macswap {
+        swapper: swapper {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
@@ -254,7 +247,7 @@ label= "WM_WIN"                            ;
 // ╷           ╷           ╷           ╷           ╷              ╷           ╷   ╷           ╷           ╷                ╷                 ╷           ╷           ╷
 
                 &none       &none       &none       &none          &none           &kp LC(W)   &kp LC(T)   &kp LC(LS(TAB))  &kp LC(TAB)       &none
-                &none       &winleft    &winfull    &winright      &none           &kp LA(F4)  &kp LC(N)   &winswap         &kp LS(TAB)       &none
+                &none       &winleft    &winfull    &winright      &none           &kp LA(F4)  &kp LC(N)   &swapper         &kp LS(TAB)       &none
     &none       &none       &none       &none       &none          &none           &none       &kp LG(TAB) &kp LG(LC(LEFT)) &kp LG(LC(RIGHT)) &none       &none
                                         &none       &mo WM_MOD_WIN &none           &none       &none       &none
                         >;
@@ -306,7 +299,7 @@ label= "WM_MAC"                            ;
 // ╷           ╷           ╷                ╷               ╷                 ╷           ╷   ╷             ╷            ╷               ╷             ╷           ╷           ╷
 
                 &none       &none            &none           &none             &none           &kp RG(W)     &kp RG(T)    &kp RC(LS(TAB)) &kp RC(TAB)   &none
-                &none       &kp RC(LA(LEFT)) &kp RC(LA(RET)) &kp RC(LA(RIGHT)) &none           &kp RG(LS(W)) &kp RG(N)    &macswap        &kp LSHFT     &none
+                &none       &kp RC(LA(LEFT)) &kp RC(LA(RET)) &kp RC(LA(RIGHT)) &none           &kp RG(LS(W)) &kp RG(N)    &swapper        &kp LSHFT     &none
     &none       &none       &none            &none           &none             &none           &none         &kp RC(UP)   &kp RC(LEFT)    &kp RC(RIGHT) &none       &none
                                              &none           &mo WM_MOD_MAC    &none           &none         &none        &none
                         >;
