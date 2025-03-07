@@ -97,7 +97,7 @@ label= "MAC"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp F       &kp P       &kp G         &kp J         &kp L       &kp U       &kp Y       &kp SEMI
-                &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LSHFT T &kp D         &kp H         &mt RSHFT N &mt RGUI E  &mt RALT I  &mt RCRTL O
+                &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LSHFT T &kp D         &kp H         &mt RSHFT N &mt RGUI E  &mt RALT I  &mt RCTRL O
      &to WIN    &kp Z       &kp X       &kp C       &kp V       &kp B         &kp K         &kp M       &kp COMMA   &kp DOT     &kp FSLH    &none
                                         &kp LGUI    &lt NUM TAB &lt SYM BSPC  &lt MOV SPACE &lt FUN RET &kp ESC
                         >;
