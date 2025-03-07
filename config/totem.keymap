@@ -52,7 +52,21 @@
             key-positions = <13 16>;
         };
     };
-    
+
+    behaviors {
+        winswapfor: winswapfor {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+        };
+        
+        winswapback: winswapback {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LA(LS)>, <&kp TAB>, <&kt LA(LS)>;
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -203,7 +217,7 @@ label= "WM_WIN"                            ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none       &none       &none   &none           &none    &kp LC(T)   &kp LC(LS(TAB))  &kp LC(TAB)       &kp LC(W)  &none
-                &none       &none       &none   &none           &none    &kp LC(N)   &kp LA(LS(TAB))  &kp LA(TAB)       &kp LA(F4) &none
+                &none       &none       &none   &none           &none    &kp LC(N)   &winswapback     &winswapfor       &kp LA(F4) &none
     &none       &none       &none       &none   &none           &none    &kp LG(TAB) &kp LG(LC(LEFT)) &kp LG(LC(RIGHT)) &none      &none    &none
                                         &none   &mo WM_MOD_WIN  &none    &none       &none            &none
                         >;
