@@ -87,12 +87,12 @@ label= "BASE_WIN"                          ;
 //                                     ┃   LCTRL   ┃  TAB/NUM  ┃ BSPC/SYM  ┃   ┃  SPC/MOV  ┃ RET/WM_WIN┃  ESC/FUN  ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+// ╷            ╷           ╷           ╷           ╷           ╷           ╷   ╷             ╷              ╷           ╷           ╷           ╷           ╷
 
-                &kp Q       &kp W       &kp F       &kp P       &kp G        &kp J         &kp L          &kp U       &kp Y       &kp SEMI
-                &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D        &kp H         &mt RSHFT N    &mt RCTRL E &mt RALT I  &mt RGUI O
-   &to BASE_MAC &kp Z       &kp X       &kp C       &kp V       &kp B        &kp K         &kp M          &kp COMMA   &kp DOT     &kp FSLH    &none
-                                        &kp LCTRL   &lt NUM TAB &lt SYM BSPC &lt MOV SPACE &lt WM_WIN RET &lt FUN ESC
+                 &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J         &kp L          &kp U       &kp Y       &kp SEMI
+                 &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D           &kp H         &mt RSHFT N    &mt RCTRL E &mt RALT I  &mt RGUI O
+    &to BASE_MAC &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K         &kp M          &kp COMMA   &kp DOT     &kp FSLH    &none
+                                         &kp LCTRL   &lt NUM TAB &lt SYM BSPC    &lt MOV SPACE &lt WM_WIN RET &lt FUN ESC
                         >;
                 };
 
@@ -112,12 +112,12 @@ label= "BASE_MAC"                          ;
 //                                     ┃   LGUI    ┃  TAB/NUM  ┃ BSPC/SYM  ┃   ┃  SPC/MOV  ┃ RET/WM_MAC┃  ESC/FUN  ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+// ╷            ╷           ╷           ╷           ╷           ╷           ╷   ╷             ╷              ╷           ╷           ╷           ╷           ╷
 
-                &kp Q       &kp W       &kp F       &kp P       &kp G        &kp J         &kp L          &kp U       &kp Y       &kp SEMI
-                &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LSHFT T &kp D        &kp H         &mt RSHFT N    &mt RGUI E  &mt RALT I  &mt RCTRL O
-   &to BASE_WIN &kp Z       &kp X       &kp C       &kp V       &kp B        &kp K         &kp M          &kp COMMA   &kp DOT     &kp FSLH    &none
-                                        &kp LGUI    &lt NUM TAB &lt SYM BSPC &lt MOV SPACE &lt WM_MAC RET &lt FUN ESC
+                 &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J         &kp L          &kp U       &kp Y       &kp SEMI
+                 &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LSHFT T &kp D           &kp H         &mt RSHFT N    &mt RGUI E  &mt RALT I  &mt RCTRL O
+    &to BASE_WIN &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K         &kp M          &kp COMMA   &kp DOT     &kp FSLH    &none
+                                         &kp LGUI    &lt NUM TAB &lt SYM BSPC    &lt MOV SPACE &lt WM_MAC RET &lt FUN ESC
                         >;
                 };
 
@@ -138,12 +138,12 @@ label= "NUM"                               ;
 //                                     ┃           ┃           ┃           ┃   ┃     =     ┃     0     ┃     .     ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷            ╷           ╷           ╷           ╷           ╷
 
-                &none       &none       &kp F       &none       &none           &none      &kp N7       &kp N8      &kp N9      &none
-                &kp A       &none       &kp E       &none       &kp D           &kp PLUS   &mt RSHFT N4 &kp N5      &kp N6      &kp ASTRK
-    &none       &none       &kp X       &kp C       &none       &kp B           &kp MINUS  &kp N1       &kp N2      &kp N3      &kp FSLH    &none 
-                                        &none       &none       &none           &kp EQUAL  &kp N0       &kp DOT
+                &none       &none       &kp F       &none       &none           &none       &kp N7       &kp N8      &kp N9      &none
+                &kp A       &none       &kp E       &none       &kp D           &kp PLUS    &mt RSHFT N4 &kp N5      &kp N6      &kp ASTRK
+    &none       &none       &kp X       &kp C       &none       &kp B           &kp MINUS   &kp N1       &kp N2      &kp N3      &kp FSLH    &none 
+                                        &none       &none       &none           &kp EQUAL   &kp N0       &kp DOT
                         >;
                 };
 
@@ -190,12 +190,12 @@ label= "MOV"                               ;
 //                                     ┃           ┃           ┃  LSHIFT   ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷              ╷              ╷              ╷               ╷           ╷           ╷
 
-                &none       &kp HOME    &kp UP      &kp END     &kp PG_UP   &msc SCRL_UP   &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &none
-                &none       &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN   &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
-    &none       &none       &none       &none       &none       &none       &none          &mkp MB4       &mkp MCLK      &mkp MB5        &none    &none
-                                        &none       &none       &kp LSHFT   &none          &none          &none
+                &none       &kp HOME    &kp UP      &kp END     &kp PG_UP       &msc SCRL_UP   &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &none
+                &none       &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN       &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
+    &none       &none       &none       &none       &none       &none           &none          &mkp MB4       &mkp MCLK      &mkp MB5        &none       &none
+                                        &none       &none       &kp LSHFT       &none          &none          &none
                         >;
                 };
      
@@ -209,19 +209,19 @@ label= "WM_WIN"                            ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃ EXIT TAB  ┃ NEW TAB   ┃ PREV TAB  ┃ NEXT TAB  ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ EXIT WIN  ┃ NEW WIN   ┃ SWAP WIN  ┃ SWAP WIN  ┃           ┃
+//             ┃           ┃ LEFT SCRN ┃ FULL SCRN ┃ RGHT SCRN ┃           ┃   ┃ EXIT WIN  ┃ NEW WIN   ┃ SWAP WIN  ┃ SWAP WIN  ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃ DESK OVW  ┃ PREV DESK ┃ NEXT DESK ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃ WM_MOD_WIN┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+// ╷           ╷           ╷            ╷           ╷              ╷           ╷   ╷           ╷           ╷                ╷                 ╷           ╷           ╷
 
-                &none       &none       &none   &none           &none    &kp LC(W)  &kp LC(T)   &kp LC(LS(TAB))  &kp LC(TAB)       &none
-                &none       &none       &none   &none           &none    &kp LA(F4) &kp LC(N)   &winswap         &kp LS(TAB)       &none
-    &none       &none       &none       &none   &none           &none    &none      &kp LG(TAB) &kp LG(LC(LEFT)) &kp LG(LC(RIGHT)) &none    &none
-                                        &none   &mo WM_MOD_WIN  &none    &none      &none       &none
+                &none       &none        &none       &none          &none           &kp LC(W)   &kp LC(T)   &kp LC(LS(TAB))  &kp LC(TAB)       &none
+                &none       &kp LG(LEFT) &kp LG(UP)  &kp LG(RIGHT)  &none           &kp LA(F4)  &kp LC(N)   &winswap         &kp LS(TAB)       &none
+    &none       &none       &none        &none       &none          &none           &none       &kp LG(TAB) &kp LG(LC(LEFT)) &kp LG(LC(RIGHT)) &none       &none
+                                         &none       &mo WM_MOD_WIN &none           &none       &none       &none
                         >;
                 };
      
@@ -261,19 +261,19 @@ label= "WM_MAC"                            ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃ EXIT TAB  ┃ NEW TAB   ┃ PREV TAB  ┃ NEXT TAB  ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃           ┃           ┃           ┃           ┃   ┃ EXIT WIN  ┃ NEW WIN   ┃ SWAP WIN  ┃ SWAP WIN  ┃           ┃
+//             ┃           ┃ LEFT SCRN ┃ FULL SCRN ┃ RGHT SCRN ┃           ┃   ┃ EXIT WIN  ┃ NEW WIN   ┃ SWAP WIN  ┃ SWAP WIN  ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃ DESK OVW  ┃ PREV DESK ┃ NEXT DESK ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃ WM_MOD_MAC┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+// ╷           ╷           ╷                ╷               ╷                 ╷           ╷   ╷             ╷            ╷               ╷             ╷           ╷           ╷
 
-                &none       &none       &none   &none           &none      &kp RG(W)     &kp RG(T)  &kp RC(LS(TAB)) &kp RC(TAB)   &none
-                &none       &none       &none   &none           &none      &kp RG(LS(W)) &kp RG(N)  &macswap        &kp LSHFT     &none
-    &none       &none       &none       &none   &none           &none      &none         &kp RC(UP) &kp RC(LEFT)    &kp RC(RIGHT) &none    &none
-                                        &none   &mo WM_MOD_MAC  &none      &none         &none      &none
+                &none       &none            &none           &none             &none           &kp RG(W)     &kp RG(T)    &kp RC(LS(TAB)) &kp RC(TAB)   &none
+                &none       &kp RC(LA(LEFT)) &kp RC(LA(RET)) &kp RC(LA(RIGHT)) &none           &kp RG(LS(W)) &kp RG(N)    &macswap        &kp LSHFT     &none
+    &none       &none       &none            &none           &none             &none           &none         &kp RC(UP)   &kp RC(LEFT)    &kp RC(RIGHT) &none       &none
+                                             &none           &mo WM_MOD_MAC    &none           &none         &none        &none
                         >;
                 };
      
@@ -294,12 +294,12 @@ label= "WM_MOD_MAC"                        ;
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷                   ╷               ╷           ╷           ╷
 
-                &none       &none       &none       &none       &none       &none &kp RG(R) &kp RC(RA(LS(TAB))) &kp RC(RA(TAB)) &none
-                &none       &none       &none       &none       &none       &none &none     &none               &none           &none
-    &none       &none       &none       &none       &none       &none       &none &none     &none               &none           &none       &none
-                                        &none       &none       &none       &none &none     &none
+                &none       &none       &none       &none       &none           &none       &kp RG(R)   &kp RC(RA(LS(TAB))) &kp RC(RA(TAB)) &none
+                &none       &none       &none       &none       &none           &none       &none       &none               &none           &none
+    &none       &none       &none       &none       &none       &none           &none       &none       &none               &none           &none       &none
+                                        &none       &none       &none           &none       &none       &none
                         >;
                 };
      
@@ -320,12 +320,12 @@ label= "FUN"                               ;
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+// ╷           ╷           ╷           ╷            ╷            ╷             ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &bt BT_NXT  &none     &kp C_VOL_UP &kp C_BRI_UP &kp LA(PSCRN)   &kp F12     &kp F7      &kp F8      &kp F9      &none
-                &bt BT_PRV  &none     &kp C_VOL_DN &kp C_BRI_DN &kp PSCRN       &kp F11     &kp F4      &kp F5      &kp F6      &none  
-    &sys_reset  &bt BT_CLR  &none     &kp C_MUTE   &none        &none           &kp F10     &kp F1      &kp F2      &kp F3      &none       &bootloader
-                                      &none        &none        &none           &none       &none       &none      
+                &bt BT_NXT  &none       &kp C_VOL_UP &kp C_BRI_UP &kp LA(PSCRN)     &kp F12     &kp F7      &kp F8      &kp F9      &none
+                &bt BT_PRV  &none       &kp C_VOL_DN &kp C_BRI_DN &kp PSCRN         &kp F11     &kp F4      &kp F5      &kp F6      &none  
+    &sys_reset  &bt BT_CLR  &none       &kp C_MUTE   &none        &none             &kp F10     &kp F1      &kp F2      &kp F3      &none       &bootloader
+                                        &none        &none        &none             &none       &none       &none      
                         >;
                 };
         };
