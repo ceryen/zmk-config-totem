@@ -216,12 +216,12 @@ label= "WM_WIN"                            ;
 //                                     ┃           ┃ WM_MOD_WIN┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-// ╷           ╷           ╷            ╷           ╷              ╷           ╷   ╷           ╷           ╷                ╷                 ╷           ╷           ╷
+// ╷           ╷           ╷                  ╷                 ╷                    ╷           ╷   ╷           ╷           ╷                ╷                 ╷           ╷           ╷
 
-                &none       &none        &none       &none          &none           &kp LC(W)   &kp LC(T)   &kp LC(LS(TAB))  &kp LC(TAB)       &none
-                &none       &kp RG(LEFT) &kp RG(UP)  &kp RG(RIGHT)  &none           &kp LA(F4)  &kp LC(N)   &winswap         &kp LS(TAB)       &none
-    &none       &none       &none        &none       &none          &none           &none       &kp LG(TAB) &kp LG(LC(LEFT)) &kp LG(LC(RIGHT)) &none       &none
-                                         &none       &mo WM_MOD_WIN &none           &none       &none       &none
+                &none       &none              &none             &none                &none           &kp LC(W)   &kp LC(T)   &kp LC(LS(TAB))  &kp LC(TAB)       &none
+                &none       &kp RG(LEFT_ARROW) &kp RG(UP_ARROW)  &kp RG(RIGHT_ARROW)  &none           &kp LA(F4)  &kp LC(N)   &winswap         &kp LS(TAB)       &none
+    &none       &none       &none              &none             &none                &none           &none       &kp LG(TAB) &kp LG(LC(LEFT)) &kp LG(LC(RIGHT)) &none       &none
+                                               &none             &mo WM_MOD_WIN       &none           &none       &none       &none
                         >;
                 };
      
